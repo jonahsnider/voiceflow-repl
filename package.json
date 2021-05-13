@@ -1,0 +1,32 @@
+{
+	"name": "typescript-starter",
+	"version": "1.0.0",
+	"private": true,
+	"license": "Apache-2.0",
+	"main": "./tsc_output/index.js",
+	"scripts": {
+		"prebuild": "rm -rf tsc_output",
+		"build": "tsc",
+		"lint": "xo",
+		"style": "prettier --check ."
+	},
+	"xo": {
+		"prettier": true,
+		"rules": {
+			"prettier/prettier": "off"
+		}
+	},
+	"devDependencies": {
+		"@types/node": "15.0.3",
+		"prettier": "2.3.0",
+		"prettier-config-xo": "1.0.4",
+		"ts-node": "9.1.1",
+		"typescript": "4.2.4",
+		"xo": "0.40.1"
+	},
+	"dependencies": {
+		"@voiceflow/runtime-client-js": "1.17.0",
+		"cli-ux": "5.5.1",
+		"execa": "5.0.0"
+	}
+}
